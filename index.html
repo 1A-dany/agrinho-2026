@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero">
+        <span class="animal" style="top: 20%; left: 10%;">🐄</span>
+        <span class="animal" style="top: 30%; right: 15%;">🐑</span>
+        <span class="animal" style="bottom: 10%; left: 20%;">🐓</span>
+
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Equilíbrio entre produção e meio ambiente</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisar curiosidades..." id="searchQuery">
+            <button class="btn" onclick="alert('Buscando curiosidades sobre agroecologia...')">🔍</button>
+        </div>
+
+        <button class="btn" style="margin-top: 30px;" onclick="toggleGame()">Entrar no Jogo Sustentável</button>
+    </section>
+
+    <div class="container">
+        <div class="info-grid">
+            <div class="card">
+                <h3>🌤️ Clima e Solo</h3>
+                <p><strong>Melhoria do Solo:</strong> Use compostagem orgânica e rotação de culturas para manter os nutrientes.</p>
+                <p><strong>Dica:</strong> A cobertura morta (palhada) ajuda a manter a umidade nos dias secos.</p>
+            </div>
+            <div class="card">
+                <h3>🗓️ Melhores por Estação</h3>
+                <ul>
+                    <li><strong>Primavera:</strong> Girassol e Milho.</li>
+                    <li><strong>Verão:</strong> Soja e Feijão.</li>
+                    <li><strong>Outono:</strong> Trigo e Aveia.</li>
+                    <li><strong>Inverno:</strong> Centeio e Ervilha.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Tabela de Cultivo de Grãos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Grão</th>
+                    <th>Tempo de Ciclo</th>
+                    <th>Melhor Estação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Milho</td>
+                    <td>120 - 150 dias</td>
+                    <td>Primavera/Verão</td>
+                </tr>
+                <tr>
+                    <td>Soja</td>
+                    <td>100 - 120 dias</td>
+                    <td>Verão</td>
+                </tr>
+                <tr>
+                    <td>Trigo</td>
+                    <td>110 - 140 dias</td>
+                    <td>Inverno/Outono</td>
+                </tr>
+                <tr>
+                    <td>Feijão</td>
+                    <td>75 - 90 dias</td>
+                    <td>Verão</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="game-section">
+        <h2>Desafio da Separação Orgânica</h2>
+        <p>Arraste cada item para o recipiente correto!</p>
+        
+        <div class="drag-items">
+            <div class="draggable" draggable="true" id="item1" data-type="legume">Abóbora (Legume)</div>
+            <div class="draggable" draggable="true" id="item2" data-type="verdura">Alface (Verdura)</div>
+            <div class="draggable" draggable="true" id="item3" data-type="esterco">Esterco Bovino</div>
+            <div class="draggable" draggable="true" id="item4" data-type="verdura">Rúcula (Verdura)</div>
+        </div>
+
+        <div class="drop-zones">
+            <div class="drop-box box-verde" data-accept="verdura"><strong>VERDURA</strong></div>
+            <div class="drop-box box-vermelha" data-accept="legume"><strong>LEGUMES</strong></div>
+            <div class="drop-box box-marrom" data-accept="esterco"><strong>ESTERCO</strong></div>
+        </div>
+
+        <button class="btn" style="margin-top: 50px;" onclick="toggleGame()">Sair do Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
